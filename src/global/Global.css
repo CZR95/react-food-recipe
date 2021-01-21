@@ -1,0 +1,441 @@
+/* background-color */
+/* body {
+  background-color: #212121;
+} */
+
+.bg-blue-light-a2 {
+  background-color: #40c4ff;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+.bg-gray-1 {
+  background-color: #f5f5f5;
+}
+.bg-gray-2 {
+  background-color: #eeeeee;
+}
+
+.bg-gray-3 {
+  background-color: #e0e0e0;
+}
+
+.bg-gray-4 {
+  background-color: #bdbdbd;
+}
+
+.bg-gray-5 {
+  background-color: #9e9e9e;
+}
+
+.bg-gray-6 {
+  background-color: #757575;
+}
+
+.bg-gray-7 {
+  background-color: #616161;
+}
+
+.bg-gray-8 {
+  background-color: #424242;
+}
+
+.bg-gray-9 {
+  background-color: #212121;
+}
+
+.bg-none {
+  background-color: none;
+}
+
+.bg-purple-1 {
+  background-color: #9933ff;
+}
+
+.bg-purple-dark-a200 {
+  background-color: #7c4dff;
+}
+
+.bg-purple-dark-a400 {
+  background-color: #651fff;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-red-1 {
+  background-color: #ffcdd2;
+}
+.bg-red-2 {
+  background-color: #ef9a9a;
+}
+.bg-red-3 {
+  background-color: #e57373;
+}
+.bg-red-4 {
+  background-color: #ef5030;
+}
+.bg-red-5 {
+  background-color: #f44336;
+}
+.bg-red-6 {
+  background-color: #e53935;
+}
+.bg-red-7 {
+  background-color: #d32f2f;
+}
+.bg-red-8 {
+  background-color: #c52828;
+}
+.bg-red-9 {
+  background-color: #b71c1c;
+}
+
+.bg-light-blue-a2 {
+  background-color: #40c4ff;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-yellow-a2 {
+  background-color: #ffff00;
+}
+/* background-color end */
+
+.bold {
+  font-weight: bold;
+}
+
+.border-none {
+  border: none;
+}
+
+.border-2-none {
+  border: 2px solid;
+}
+
+.border-2 {
+  border: 2px solid #188f00;
+}
+
+.border-2-blue {
+  border: 2px solid blue;
+}
+
+.border-2-gray {
+  border: 2px solid gray;
+}
+
+.border-3 {
+  border: 3px solid #383838;
+}
+
+.border-red {
+  border: 2px solid #dc3545;
+}
+
+.input {
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-blue-light-1 {
+  background-color: rgb(0, 183, 255);
+}
+
+.bg-dark-gray {
+  background-color: rgb(54, 54, 54);
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+}
+
+.fill-height-80vh {
+  height: 80vh;
+}
+
+.height-10vh {
+  height: 10vh;
+}
+
+.height-20vh {
+  height: 20vh;
+}
+
+.height-30vh {
+  height: 30vh;
+}
+
+.height-50vh {
+  height: 50vh;
+}
+
+.height-60vh {
+  height: 60vh;
+}
+
+.height-70vh {
+  height: 70vh;
+}
+
+/* margin */
+.m--1 {
+  margin: -1%;
+}
+.mt--1 {
+  margin-top: -10px;
+}
+/* margin end */
+
+/* opacity */
+.opacity-1 {
+  opacity: 0.1;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-9 {
+  opacity: 0.9;
+}
+
+.opacity-10 {
+  opacity: 1;
+}
+/* opacity end */
+
+/* padding */
+.p--1 {
+  padding: -1%;
+}
+
+.p-y-10 {
+  padding: 30% 0%;
+}
+/* padding end */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* text color */
+.text-blue {
+  color: blue;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-gray-light-1 {
+  color: rgb(216, 216, 216);
+}
+
+.text-green {
+  color: #28a745;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-purple-dark-a200 {
+  color: #7c4dff;
+}
+
+.text-yellow-a400 {
+  color: #ffea00;
+}
+/* text color end */
+.font-size-1 {
+  font-size: calc(0.25em + 0.5vw);
+}
+.font-size-2 {
+  font-size: calc(0.5em + 0.5vw);
+}
+
+.font-size-3 {
+  font-size: calc(0.75em + 0.5vw);
+}
+
+.font-size-4 {
+  font-size: calc(1em + 0.5vw);
+}
+
+.font-size-5 {
+  font-size: calc(1.25em + 0.5vw);
+}
+
+.font-size-6 {
+  font-size: calc(1.5em + 0.5vw);
+}
+
+.font-size-7 {
+  font-size: calc(1.75em + 0.5vw);
+}
+
+.font-size-8 {
+  font-size: calc(2em + 0.5vw);
+}
+.font-size-9 {
+  font-size: calc(2.25em + 0.5vw);
+}
+
+.font-size-10 {
+  font-size: calc(2.5em + 0.5vw);
+}
+
+.py-10 {
+  padding: 10% 0%;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-15p {
+  width: 15%;
+}
+
+.width-20p {
+  width: 20%;
+}
+
+.width-25p {
+  width: 25%;
+}
+
+.width-50p {
+  width: 50%;
+}
+
+.width-75p {
+  width: 75%;
+}
+
+.width-80p {
+  width: 80%;
+}
+
+.width-100p {
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Work+Sans&display=swap");
+.font-family-1 {
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap");
+.font-family-2 {
+  font-family: "Share", cursive;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+.font-family-3 {
+  font-family: "Gugi", cursive;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap");
+.font-family-4 {
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+input {
+  outline: none;
+}
+
+.btn-green {
+  color: white;
+  background-color: green;
+}
+
+.btn-blue {
+  color: white;
+  background-color: blue;
+}
+
+.btn-white {
+  color: black;
+  background-color: white;
+}
+
+.btn-yellow {
+  color: white;
+  background-color: yellow;
+}
+
+.rounded-pill-left {
+  border-radius: 30px 0px 0px 30px;
+}
+
+.rounded-pill-right {
+  border-radius: 0px 30px 30px 0px;
+}
