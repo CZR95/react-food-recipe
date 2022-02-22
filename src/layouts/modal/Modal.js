@@ -12,6 +12,7 @@ import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 import { faTrashAlt } from "@fortawesome/free-regular-svg-icons";
 import { faEdit } from "@fortawesome/free-regular-svg-icons";
+import { faTasks } from "@fortawesome/free-solid-svg-icons";
 
 export const ModalCenter = (props) => {
   return (
@@ -85,11 +86,11 @@ export const SuccessModal = (props) => {
               <h4>Success</h4>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col>
               <p>Added Successful</p>
             </Col>
-          </Row>
+          </Row> */}
           <Row>
             <Col>
               <Button
@@ -112,6 +113,8 @@ export const FailedModal = (props) => {
   // show={this.state.failedModalShow}
   // onHide={() => this.setState({ failedModalShow: false })}
   // />
+  let errMsg = props.errMsg == null ? "" : props.errMsg;
+
   return (
     <Modal
       {...props}
@@ -142,7 +145,7 @@ export const FailedModal = (props) => {
           </Row>
           <Row>
             <Col>
-              <p>{props.errMsg}</p>
+              <p>{errMsg}</p>
             </Col>
           </Row>
           <Row>
@@ -205,6 +208,18 @@ export const EditRecordModal = (props) => {
                 />
               </Col>
             </Form.Group>
+            <Form.Group as={Row} controlId="formPlaintextDate">
+              <Form.Label column sm="4">
+                Date
+              </Form.Label>
+              <Col sm="8">
+                <Form.Control
+                  type="date"
+                  placeholder="Date"
+                  defaultValue={props.value.date}
+                />
+              </Col>
+            </Form.Group>
             <Form.Group as={Row} controlId="formPlaintextBaseAmount">
               <Form.Label column sm="4">
                 Base Amount
@@ -262,18 +277,6 @@ export const EditRecordModal = (props) => {
                   type="text"
                   placeholder="Remark"
                   defaultValue={props.value.remark}
-                />
-              </Col>
-            </Form.Group>
-            <Form.Group as={Row} controlId="formPlaintextDate">
-              <Form.Label column sm="4">
-                Date
-              </Form.Label>
-              <Col sm="8">
-                <Form.Control
-                  type="date"
-                  placeholder="Date"
-                  defaultValue={props.value.date}
                 />
               </Col>
             </Form.Group>
@@ -356,6 +359,178 @@ export const DeleteRecordModal = (props) => {
                 className="rounded-pill width-100p"
               >
                 Delete
+              </Button>
+            </Col>
+          </Row>
+        </Container>
+      </Modal.Body>
+    </Modal>
+  );
+};
+
+export const ConfirmModal = (props) => {
+  // <SuccessModal
+  // show={this.state.successModalShow}
+  // onHide={() => this.setState({ successModalShow: false })}
+  // />
+
+  return (
+    <Modal
+      {...props}
+      size="xl"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      {/* <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Using Grid in Modal
+        </Modal.Title>
+      </Modal.Header> */}
+
+      <Modal.Body className="show-grid">
+        <Container fluid className="text-center m-2">
+          <Row>
+            <Col>
+              <FontAwesomeIcon
+                icon={faTasks}
+                size="2x"
+                className="mb-3 text-warning"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <h4>Confirmation</h4>
+            </Col>
+          </Row>
+          <hr />
+          {/* Body */}
+          <Form.Group as={Row} controlId="formPlaintextDate">
+            <Form.Label column sm="4">
+              Date
+            </Form.Label>
+            <Col sm="8">
+              <Form.Control
+                type="date"
+                placeholder="Date"
+                readOnly
+                defaultValue={props.date}
+              />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} controlId="formPlaintextCategory">
+            <Form.Label column sm="4">
+              Category
+            </Form.Label>
+            <Col sm="8">
+              <Form.Control
+                type="text"
+                placeholder="Category"
+                readOnly
+                defaultValue={props.category}
+              />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} controlId="formPlaintextSubcategory">
+            <Form.Label column sm="4">
+              Subcategory
+            </Form.Label>
+            <Col sm="8">
+              <Form.Control
+                type="text"
+                placeholder="Subcategory"
+                readOnly
+                defaultValue={props.subcategory}
+              />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} controlId="formPlaintextRemark">
+            <Form.Label column sm="4">
+              Remark
+            </Form.Label>
+            <Col sm="8">
+              <Form.Control
+                type="text"
+                placeholder="Remark"
+                readOnly
+                defaultValue={props.remark}
+              />
+            </Col>
+          </Form.Group>
+          <Form.Row className="text-center mb-2 ">
+            <Col>
+              <span>Name</span>
+            </Col>
+            <Col>
+              <span>Share Amount</span>
+            </Col>
+            <Col>
+              <span>Amount</span>
+            </Col>
+            <Col>
+              <span>Adjust</span>
+            </Col>
+            <Col>
+              <span>Total</span>
+            </Col>
+          </Form.Row>
+
+          {props.data.map((value, index) => (
+            <Form.Row className="text-center py-1">
+              <Col>
+                <p>{value.name}</p>
+              </Col>
+              <Col>
+                <p>{value.shareBill}</p>
+              </Col>
+              <Col>
+                <p>{value.amount}</p>
+              </Col>
+              <Col>
+                <p>{value.adjust}</p>
+              </Col>
+              <Col>
+                <p>{value.total}</p>
+              </Col>
+            </Form.Row>
+          ))}
+
+          {/* {props.data.map((value, index) => (
+            <Form.Row className="text-center py-1">
+              <Col>
+                <p>{value.name}</p>
+              </Col>
+              <Col>
+                <p>{parseFloat(value.shareBill) + parseFloat(value.amount)}</p>
+              </Col>
+              <Col>
+                <p>{value.adjust}</p>
+              </Col>
+              <Col>
+                <p>{value.total}</p>
+              </Col>
+            </Form.Row>
+          ))} */}
+          <hr />
+
+          {/* Button */}
+          <Row>
+            <Col>
+              <Button
+                variant="secondary"
+                onClick={props.onHide}
+                className="rounded-pill width-100p"
+              >
+                Cancel
+              </Button>
+            </Col>
+            <Col>
+              <Button
+                variant="warning"
+                onClick={props.actionSubmit}
+                className="rounded-pill width-100p"
+              >
+                <span className={"text-white"}>Submit</span>
               </Button>
             </Col>
           </Row>

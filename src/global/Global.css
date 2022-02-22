@@ -169,12 +169,20 @@
   height: 10vh;
 }
 
+.height-15vh {
+  height: 15vh;
+}
+
 .height-20vh {
   height: 20vh;
 }
 
 .height-30vh {
   height: 30vh;
+}
+
+.height-40vh {
+  height: 40vh;
 }
 
 .height-50vh {
@@ -186,10 +194,14 @@
 }
 
 .height-70vh {
-  height: 70vh;
+  max-height: 70vh;
 }
 
 /* margin */
+.m-auto {
+  margin: auto;
+}
+
 .m--1 {
   margin: -1%;
 }
@@ -287,10 +299,12 @@
 }
 /* text color end */
 .font-size-1 {
-  font-size: calc(0.25em + 0.5vw);
+  /* font-size: calc(0.25em + 0.5vw); */
+  font-size: 1rem;
 }
 .font-size-2 {
-  font-size: calc(0.5em + 0.5vw);
+  /* font-size: calc(0.5em + 0.5vw); */
+  font-size: 1rem;
 }
 
 .font-size-3 {
@@ -334,6 +348,14 @@
   margin-right: auto;
 }
 
+.width-5p {
+  width: 5%;
+}
+
+.width-10p {
+  width: 10%;
+}
+
 .width-15p {
   width: 15%;
 }
@@ -360,6 +382,10 @@
 
 .width-100p {
   width: 100%;
+}
+
+.width-200 {
+  width: 200px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Work+Sans&display=swap");

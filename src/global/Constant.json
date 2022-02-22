@@ -1,0 +1,11 @@
+{
+  "name": "name",
+  "recipe": "recipe",
+  "recipeType": "recipeType",
+  "recipeTypeId": "recipeTypeId",
+  "description": "description",
+  "ingredient": "ingredient",
+  "imgURL": "imgURL",
+  "instruction": "instruction",
+  "end": "end"
+}

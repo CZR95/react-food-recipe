@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import i18n from "./locales/i18n.js";
+// import i18n from "./locales/i18n.js";
 import { withNamespaces } from "react-i18next";
 
 // react-router-dom
@@ -9,13 +9,12 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import RecordAdd from "./components/record/RecordAdd";
-import RecordView from "./components/record/RecordView";
-import Category from "./components/category/CategoryManage";
+
+import Recipe from "./components/recipe/Recipe";
 
 class App extends Component {
   render() {
-    const { t } = this.props;
+    // const { t } = this.props;
 
     return (
       <BrowserRouter>
@@ -24,17 +23,13 @@ class App extends Component {
         </header>
 
         <Switch>
-          <Route path="/record/add" component={RecordAdd} />
-          <Route path="/category/manage" component={Category} />
-          <Route path="/record/view" component={RecordView} />
-          <Redirect to="/record/add" component={RecordAdd} />
+          <Route path="/recipe" component={Recipe} />
+
+          <Redirect to="/recipe" component={Recipe} />
         </Switch>
-        {/* //<ModalCenter /> */}
 
         {/* footer bar */}
-        <footer>
-          <Footer />
-        </footer>
+        <footer>{/* <Footer /> */}</footer>
       </BrowserRouter>
     );
   }
